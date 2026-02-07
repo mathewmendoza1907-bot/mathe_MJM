@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>VÁRTOX | Tienda Oficial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- TIPOGRAFÍA -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    /* SECCIÓN PRODUCTOS */
+    .productos {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #111;
+      padding: 15px;
+      border-radius: 15px;
+      animation: aparecer 0.8s ease;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .card h3 {
+      margin-top: 12px;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+    /* BOTÓN COMPRAR */
+    .btn-comprar {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 12px 22px;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 30px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .btn-comprar:hover {
+      background: #ccc;
+      transform: scale(1.05);
+    }
+
+    /* ANIMACIÓN */
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* RESPONSIVE CELULAR */
+    @media (max-width: 600px) {
+      .productos {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .card h3 {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+ <section class="productos">
+  <h2>NUEVA COLECCIÓN VÁRTOX</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="img/vortex ddd.png" alt="Hoodies Vártox">
+      <h3>Hoodies VÁRTOX</h3>
+      <a class="btn-comprar" href="https://wa.me/593XXXXXXXXX" target="_blank">
+        Comprar
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="img/vortex xd .png" alt="Camisetas Vártox">
+      <h3>Camisetas VÁRTOX</h3>
+      <a class="btn-comprar" href="https://wa.me/593XXXXXXXXX" target="_blank">
+        Comprar
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="img/camisa.png" alt="Camiseta Negra Vártox">
+      <h3>Camiseta Negra VÁRTOX</h3>
+      <a class="btn-comprar" href="https://wa.me/593XXXXXXXXX" target="_blank">
+        Comprar
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+</body>
+</html>
